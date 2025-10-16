@@ -1,4 +1,4 @@
-const { giftedid } = require('./id'); // Ensure this module exports `giftedid`
+SILVAgiftedid } = require('./id'); // Ensure this module exports `giftedid`
 const express = require('express');
 const fs = require('fs');
 let router = express.Router();
@@ -28,8 +28,8 @@ function randomMegaId(length = 6, numberLength = 4) {
 async function uploadCredsToMega(credsPath) {
     try {
         const storage = await new Storage({
-            email: 'sylivanusmomanyi@gmail.com', // Your Mega A/c Email Here
-            password: 'Sylivanus@42620143' // Your Mega A/c Password Here
+            email: 'koboko8569@foxroids.com', // Your Mega A/c Email Here
+            password: 'koboko8569@foxroids.com' // Your Mega A/c Password Here
         }).ready;
         console.log('Mega storage initialized.');
 
@@ -105,7 +105,7 @@ router.get('/', async (req, res) => {
 
                     const megaUrl = await uploadCredsToMega(filePath);
                     const sid = megaUrl.includes("https://mega.nz/file/")
-                        ? 'Silva~' + megaUrl.split("https://mega.nz/file/")[1]
+                        ? 'Sila~' + megaUrl.split("https://mega.nz/file/")[1]
                         : 'Error: Invalid URL';
 
                     console.log(`Session ID: ${sid}`);
@@ -116,10 +116,9 @@ router.get('/', async (req, res) => {
 ______________________________
 *SESSION ID GENERATED SUCCESSFUL*
 ______________________________
-SILVA TECH INC
 
- DEPLOY SILVA MD BOT OR SILVA SPARK MD
-______________________________
+SILA MD CONNECTED 
+_____________________________
 
 Use your Session ID Above to Deploy your Bot.`;
 
